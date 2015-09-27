@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Wenze\Desktop\Space Invaders\Space Invaders (Android)\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd">
+        <dex dex="C:\Users\Wenze\Desktop\Space Invaders\Space Invaders (Android)\app\build\intermediates\pre-dexed\debug\android-support-v4-1d6e87a6d29ef1ec2b4a308f617c83ba700efbd0.jar" />
+    </item>
+
+</items>

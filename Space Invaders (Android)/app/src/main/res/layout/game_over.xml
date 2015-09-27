@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout" >
+
+    
+    <LinearLayout
+        style="@style/Layout.CenterLinearLayout" >
+    
+	    <com.dreede.spaceinvaders.view.FontTextView
+	        style="@style/Widget.TextView.H.H1"
+	        android:text="@string/game_over"
+	        android:textColor="@color/red" />
+	
+	    <ScrollView
+	        style="@style/Layout.ScrollView" >
+	    
+		    <TableLayout
+		        style="@style/Layout.TableLayout" >
+		
+		        <TableRow
+		            style="@style/Layout.TableRow" >
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+		                style="@style/Widget.TextView.T.Big"
+		                android:text="@string/points_colon" />
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/textViewPointsGameOverMenu"
+		                style="@style/Widget.TextView.T.Normal" />
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/textViewPointsNewRecordGameOverMenu"
+		                style="@style/Widget.TextView.T.Normal"
+		                android:text="@string/new_record"
+		                android:textColor="@color/red" />
+		        </TableRow>
+		
+		        <TableRow
+		            style="@style/Layout.TableRow" >
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+		                style="@style/Widget.TextView.T.Big"
+		                android:text="@string/wave_colon" />
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/textViewWaveGameOverMenu"
+		                style="@style/Widget.TextView.T.Normal" />
+		
+		            <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/textViewWaveNewRecordGameOverMenu"
+		                style="@style/Widget.TextView.T.Normal"
+		                android:text="@string/new_record"
+		                android:textColor="@color/red" />
+		        </TableRow>
+		    </TableLayout>
+		 </ScrollView>
+	</LinearLayout>
+
+    <LinearLayout
+        style="@style/Layout.ButtonLineLinearLayout" >
+
+        <com.dreede.spaceinvaders.view.FontButton
+            android:id="@+id/buttonRestartGameOverMenu"
+            style="@style/Widget.Control.MenuButton"
+            android:text="@string/restart" />
+
+        <com.dreede.spaceinvaders.view.FontButton
+            android:id="@+id/buttonStartMenuGameOverMenu"
+            style="@style/Widget.Control.MenuButton"
+            android:text="@string/start_menu" />
+    </LinearLayout>
+
+</LinearLayout>

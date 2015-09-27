@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dreede.spaceinvaders.view.ScrollingTableHighscoreMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout" >
+
+    <LinearLayout
+        style="@style/Layout.CenterLinearLayout" >
+    
+	    <!-- Überschrift -->
+	
+	    <com.dreede.spaceinvaders.view.FontTextView
+	        style="@style/Widget.TextView.H.H1"
+	        android:text="@string/highscore"
+	        android:textColor="@color/red" />
+	
+	    <TableLayout
+	        android:id="@+id/tableHeaderHighscoreMenu"
+	        style="@style/Layout.TableLayout" >
+	
+	        <!-- Header -->
+	
+	        <TableRow
+	            style="@style/Layout.TableRow" >
+	
+	            <com.dreede.spaceinvaders.view.FontTextView
+	                style="@style/Widget.TextView.T.Big"
+	                android:gravity="center"
+	                android:text="@string/rank" />
+	
+	            <com.dreede.spaceinvaders.view.FontTextView
+	                style="@style/Widget.TextView.T.Big"
+	                android:gravity="center"
+	                android:text="@string/points" />
+	
+	            <com.dreede.spaceinvaders.view.FontTextView
+	                style="@style/Widget.TextView.T.Big"
+	                android:gravity="center"
+	                android:text="@string/wave" />
+	        </TableRow>
+	    </TableLayout>
+	
+	    <!-- Content -->
+	
+	    <ScrollView
+	        style="@style/Layout.ScrollView" >
+	
+	        <TableLayout
+		        android:id="@+id/tableBodyHighscoreMenu"
+	            style="@style/Layout.TableLayout" >
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="1." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints1HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave1HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="2." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints2HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave2HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="3." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints3HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave3HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="4." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints4HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave4HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="5." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints5HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave5HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="6." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints6HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave6HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="7." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints7HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave7HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="8." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints8HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave8HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	           <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="9." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints9HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave9HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	
+	           <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center"
+	                    android:text="10." />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewPoints10HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+				        android:id="@+id/TextViewWave10HighscoreMenu"
+	                    style="@style/Widget.TextView.T.Normal"
+	                    android:gravity="center" />
+	            </TableRow>
+	        </TableLayout>
+	    </ScrollView>
+	</LinearLayout>
+	    
+	    
+    <com.dreede.spaceinvaders.view.FontButton
+        android:id="@+id/buttonBackHighscoreMenu"
+        style="@style/Widget.Control.MenuButton"
+        android:layout_gravity="left"
+        android:text="@string/back" />
+
+</com.dreede.spaceinvaders.view.ScrollingTableHighscoreMenu>

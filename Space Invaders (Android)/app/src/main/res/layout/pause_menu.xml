@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout">
+
+    
+   <LinearLayout
+        style="@style/Layout.CenterLinearLayout" > 
+        
+	    <!-- Überschrift -->
+	    <com.dreede.spaceinvaders.view.FontTextView
+			style="@style/Widget.TextView.H.H1"
+	        android:text="@string/pause"
+	        android:textColor="@color/red"
+		/>
+	
+	    
+	    
+	    <ScrollView 
+	        style="@style/Layout.ScrollView" >
+		    
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+		        
+		        
+		        
+			    <!-- Buttons -->
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonRestartPauseMenu"
+			        android:text="@string/restart"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonOptionsPauseMenu"
+			        android:text="@string/options"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonStartMenuPauseMenu"
+			        android:text="@string/start_menu"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+		    </LinearLayout>
+	    </ScrollView>
+    </LinearLayout>
+   
+   <com.dreede.spaceinvaders.view.FontButton
+        android:id="@+id/buttonBackPauseMenu"
+        style="@style/Widget.Control.MenuButton"
+        android:text="@string/back"
+        android:layout_gravity="left" />
+   
+</LinearLayout>

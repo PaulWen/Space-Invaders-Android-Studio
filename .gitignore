@@ -1,1 +1,8 @@
-*.class 
+./Space Invaders (Android)/.gradle
+./Space Invaders (Android)/local.properties
+./Space Invaders (Android)/.idea/workspace.xml
+./Space Invaders (Android)/.idea/libraries
+./Space Invaders (Android)/DS_Store
+./Space Invaders (Android)/build
+./Space Invaders (Android)/captures
+*.class

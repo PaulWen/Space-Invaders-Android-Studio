@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout" >
+
+    
+    <!-- Überschrift -->
+    <com.dreede.spaceinvaders.view.FontTextView
+		style="@style/Widget.TextView.H.H1"
+        android:text="@string/app_name"
+        android:textColor="@color/red"
+	/>
+
+    
+    
+    <ScrollView 
+        style="@style/Layout.ScrollView">
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:orientation="vertical" >
+	        
+	        
+	        
+		    <!-- Buttons -->
+		    <com.dreede.spaceinvaders.view.FontButton
+		        android:id="@+id/buttonPlayStartMenu"
+		        android:text="@string/play"
+		        style="@style/Widget.Control.MenuButton"
+		    />
+		     
+		    <com.dreede.spaceinvaders.view.FontButton
+		        android:id="@+id/buttonBuildShipStartMenu"
+		        android:text="@string/build_ship"
+		        style="@style/Widget.Control.MenuButton"
+		    />
+		     
+		    <com.dreede.spaceinvaders.view.FontButton
+		        android:id="@+id/buttonOptionsStartMenu"
+		        android:text="@string/options"
+		        style="@style/Widget.Control.MenuButton"
+		    />
+		     
+		    <com.dreede.spaceinvaders.view.FontButton
+		        android:id="@+id/buttonCreditsStartMenu"
+		        android:text="@string/credits"
+		        style="@style/Widget.Control.MenuButton"
+		    />
+		     
+		    
+		    
+	    </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

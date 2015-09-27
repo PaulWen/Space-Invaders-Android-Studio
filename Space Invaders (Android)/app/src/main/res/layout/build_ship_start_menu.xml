@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout">
+
+    
+    <LinearLayout
+        style="@style/Layout.CenterLinearLayout" >
+    
+	    <!-- Überschrift -->
+	    <com.dreede.spaceinvaders.view.FontTextView
+			style="@style/Widget.TextView.H.H1"
+	        android:text="@string/build_ship"
+	        android:textColor="@color/red"
+		/>
+	
+	    
+	    
+	    <ScrollView 
+	        style="@style/Layout.ScrollView">
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:orientation="vertical" >
+		        
+		        
+		        
+			    <!-- Buttons -->
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonNewGamePlayMenu"
+			        android:text="@string/new_game"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonLoadGamePlayMenu"
+			        android:text="@string/load_game"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+			    <com.dreede.spaceinvaders.view.FontButton
+			        android:id="@+id/buttonHighscorePlayMenu"
+			        android:text="@string/highscore"
+			        style="@style/Widget.Control.MenuButton"
+			    />
+			     
+			    
+			    
+		    </LinearLayout>
+	    </ScrollView>
+	  </LinearLayout>
+    
+    <com.dreede.spaceinvaders.view.FontButton
+        android:id="@+id/buttonBackBuildShipStartMenu"
+        style="@style/Widget.Control.MenuButton"
+        android:layout_gravity="left"
+        android:text="@string/back" />
+    
+</LinearLayout>

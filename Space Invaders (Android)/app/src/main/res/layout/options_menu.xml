@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.MainLinearLayout" >
+
+    
+    <LinearLayout
+        style="@style/Layout.CenterLinearLayout" >
+    
+	    <!-- Überschrift -->
+	
+	    <com.dreede.spaceinvaders.view.FontTextView
+	        style="@style/Widget.TextView.H.H1"
+	        android:text="@string/options"
+	        android:textColor="@color/red" />
+	
+	    <ScrollView
+	        style="@style/Layout.ScrollView" >
+	
+	        <TableLayout
+	           style="@style/Layout.TableLayout" >
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Big"
+	                    android:text="@string/soundtrack_colon" />
+	
+	                <SeekBar
+	                    android:id="@+id/seekBarSoundtrackOptionsMenu"
+	                    style="@style/Widget.Control.SeekBar" />
+	            </TableRow>
+	
+	            <TableRow
+	                style="@style/Layout.TableRow" >
+	
+	                <com.dreede.spaceinvaders.view.FontTextView
+	                    style="@style/Widget.TextView.T.Big"
+	                    android:text="@string/sound_effects_colon" />
+	
+	                <SeekBar
+	                    android:id="@+id/seekBarSoundEffectsOptionsMenu"
+	                    style="@style/Widget.Control.SeekBar" />
+	
+	            </TableRow>
+	        </TableLayout>
+	    </ScrollView>
+	  </LinearLayout>
+
+ <com.dreede.spaceinvaders.view.FontButton
+        android:id="@+id/buttonBackOptionsMenu"
+        style="@style/Widget.Control.MenuButton"
+        android:layout_gravity="left"
+        android:text="@string/back" />
+</LinearLayout>
