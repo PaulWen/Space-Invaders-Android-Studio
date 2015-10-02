@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Wenze\Desktop\Space Invaders\Space Invaders (Android)\app\libs\android-support-v4.jar"
+        jar="C:\Users\Wenze\Desktop\Android Workspace\Space Invaders\Space Invaders (Android)\app\libs\android-support-v4.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd">
-        <dex dex="C:\Users\Wenze\Desktop\Space Invaders\Space Invaders (Android)\app\build\intermediates\pre-dexed\debug\android-support-v4-1d6e87a6d29ef1ec2b4a308f617c83ba700efbd0.jar" />
+        <dex dex="C:\Users\Wenze\Desktop\Android Workspace\Space Invaders\Space Invaders (Android)\app\build\intermediates\pre-dexed\debug\android-support-v4-7808915983187abda941c234b58ed8f24bbd7acc.jar" />
     </item>
 
 </items>

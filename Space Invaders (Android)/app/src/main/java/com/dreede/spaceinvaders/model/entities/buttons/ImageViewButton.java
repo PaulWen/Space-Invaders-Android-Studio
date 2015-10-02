@@ -137,15 +137,15 @@ public class ImageViewButton {
 		 */
 		public Builder(int buttonID, ImageView button, Context context) {
 			switch (buttonID) {
-			case LEFT_BUTTON:
-				this.button = new ImageViewButton(LEFT_BUTTON, button, R.drawable.button_move_left, R.drawable.button_move_left_touched);
-				break;
-			case RIGHT_BUTTON:
-				this.button = new ImageViewButton(RIGHT_BUTTON, button, R.drawable.button_move_right, R.drawable.button_move_right_touched);
-				break;
-			case SHOOT_BUTTON:
-				this.button = new ImageViewButton(SHOOT_BUTTON, button, R.drawable.button_shoot, R.drawable.button_shoot_touched);
-				break;
+				case LEFT_BUTTON:
+					this.button = new ImageViewButton(LEFT_BUTTON, button, R.drawable.button_move_left, R.drawable.button_move_left_touched);
+					break;
+				case RIGHT_BUTTON:
+					this.button = new ImageViewButton(RIGHT_BUTTON, button, R.drawable.button_move_right, R.drawable.button_move_right_touched);
+					break;
+				case SHOOT_BUTTON:
+					this.button = new ImageViewButton(SHOOT_BUTTON, button, R.drawable.button_shoot, R.drawable.button_shoot_touched);
+					break;
 			}
 		}
 		

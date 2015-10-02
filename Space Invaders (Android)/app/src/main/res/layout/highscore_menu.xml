@@ -4,9 +4,8 @@
 
     <LinearLayout
         style="@style/Layout.CenterLinearLayout" >
-    
+
 	    <!-- Überschrift -->
-	
 	    <com.dreede.spaceinvaders.view.FontTextView
 	        style="@style/Widget.TextView.H.H1"
 	        android:text="@string/highscore"
@@ -37,9 +36,8 @@
 	                android:text="@string/wave" />
 	        </TableRow>
 	    </TableLayout>
-	
+
 	    <!-- Content -->
-	
 	    <ScrollView
 	        style="@style/Layout.ScrollView" >
 	

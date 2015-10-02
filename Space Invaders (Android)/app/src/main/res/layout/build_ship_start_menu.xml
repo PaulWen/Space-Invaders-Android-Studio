@@ -5,15 +5,23 @@
     
     <LinearLayout
         style="@style/Layout.CenterLinearLayout" >
-    
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+
 	    <!-- Überschrift -->
 	    <com.dreede.spaceinvaders.view.FontTextView
 			style="@style/Widget.TextView.H.H1"
 	        android:text="@string/build_ship"
 	        android:textColor="@color/red"
 		/>
-	
-	    
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
 	    
 	    <ScrollView 
 	        style="@style/Layout.ScrollView">
@@ -48,6 +56,12 @@
 			    
 		    </LinearLayout>
 	    </ScrollView>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"/>
+
 	  </LinearLayout>
     
     <com.dreede.spaceinvaders.view.FontButton

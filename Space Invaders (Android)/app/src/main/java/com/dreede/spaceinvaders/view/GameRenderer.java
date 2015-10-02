@@ -1,10 +1,5 @@
 package com.dreede.spaceinvaders.view;
 
-import java.util.HashMap;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
-
 import android.content.Context;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView.Renderer;
@@ -15,6 +10,11 @@ import com.dreede.spaceinvaders.model.ViewModelInterface;
 import com.dreede.spaceinvaders.model.entities.TexturedOpenGlObject;
 import com.dreede.spaceinvaders.util.TextureHelper;
 import com.dreede.spaceinvaders.util.shaderprograms.TextureShaderProgram;
+
+import java.util.HashMap;
+
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
 
 /**
  * Die Klasse {@link GameRenderer} ist dafür verantowrtlich die Inhalte auf die GameSurfaceView zu zeichnen.
@@ -106,14 +106,14 @@ public class GameRenderer implements Renderer {
 		textureShaderProgram = new TextureShaderProgram(context);
 
 //		////////////////////////////////Texturen laden////////////////////////////////
-//		
+//
 //		for (TexturedEntity entity : model.texturedEntitiesToDraw()) {
 //			for (int spriteResourceID : entity.getSpriteResourceIDList()) {
 //				// gucken, ob die gewünschte Bildressource schon geladen ist
 //				// (ACHTUNG: Jede Datei ist dadurch immer nur in einer Größe vorhanden!!)
 //				if (!textureIDMap.keySet().contains(spriteResourceID)) {
 //					// falls die gewünschte Bildresource noch nicht geladen wurde diese laden
-//					textureIDMap.put(spriteResourceID, 
+//					textureIDMap.put(spriteResourceID,
 //									TextureHelper.loadTexture(context, spriteResourceID,
 //									entity.getWidth(), entity.getHeight()));
 //				}
