@@ -105,9 +105,9 @@ public class GameRenderer implements Renderer {
 		//TextureShaderProgramm laden
 		textureShaderProgram = new TextureShaderProgram(context);
 
-//		////////////////////////////////Texturen laden////////////////////////////////
-//
-//		for (TexturedEntity entity : model.texturedEntitiesToDraw()) {
+		////////////////////////////////Texturen laden////////////////////////////////
+
+//		for (TexturedOpenGlObject entity : model.texturedEntitiesToDraw()) {
 //			for (int spriteResourceID : entity.getSpriteResourceIDList()) {
 //				// gucken, ob die gewünschte Bildressource schon geladen ist
 //				// (ACHTUNG: Jede Datei ist dadurch immer nur in einer Größe vorhanden!!)
@@ -158,7 +158,7 @@ public class GameRenderer implements Renderer {
 								TextureHelper.loadTexture(context, entity.getCurrentSpriteResourceID(),
 								entity.getWidth(), entity.getHeight()));
 			}
-			
+
 			// das Objekt Zeichnen
 			entity.draw(projectionAndViewMatrix, textureShaderProgram, textureIDMap.get(entity.getCurrentSpriteResourceID()));
 		}

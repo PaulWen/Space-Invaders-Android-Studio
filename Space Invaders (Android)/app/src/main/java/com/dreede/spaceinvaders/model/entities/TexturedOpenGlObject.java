@@ -1,14 +1,14 @@
 package com.dreede.spaceinvaders.model.entities;
 
-import java.io.Serializable;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.FloatBuffer;
-
 import android.opengl.GLES20;
 
 import com.dreede.spaceinvaders.util.Rectangle;
 import com.dreede.spaceinvaders.util.shaderprograms.TextureShaderProgram;
+
+import java.io.Serializable;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.FloatBuffer;
 
 /**
  * Die abstrakte Klasse {@link TexturedOpenGlObject} enthält alle Informationen, um das Objekt mit einer Texture in OpenGL zu zeichnen.

@@ -1,8 +1,5 @@
 package com.dreede.spaceinvaders.model;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.dataObjects.GameModelDataToSaveDataObject;
 import com.dreede.spaceinvaders.model.entities.Alien;
@@ -14,6 +11,9 @@ import com.dreede.spaceinvaders.model.entities.TexturedOpenGlObject;
 import com.dreede.spaceinvaders.model.entities.buttons.ImageViewButton;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
 import com.dreede.spaceinvaders.util.Rectangle;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Die Klasse {@link GameModel} ist das Model vom Spiel. Es speichert und verwaltet alle Objekte auf dem Spielfeld.
