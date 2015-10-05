@@ -1,11 +1,12 @@
 package com.dreede.spaceinvaders.model.entities;
 
-import java.util.ArrayList;
-
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
 import com.dreede.spaceinvaders.model.entities.skills.DestructiveSkill;
 import com.dreede.spaceinvaders.model.entities.skills.DestructiveSkillInterface;
+
+import java.util.ArrayList;
 
 /**
  * Die Klasse {@link Explosion} ist eine Explosion.
@@ -38,7 +39,7 @@ public class Explosion extends TexturedOpenGlObject implements DestructiveSkillI
 	 * @param y Y-Koordinate der unteren-linken-Ecke des Objektes
 	 */
 	public Explosion(float x, float y) {
-		super(new int[]{R.drawable.explosion1, R.drawable.explosion2, R.drawable.explosion3, R.drawable.explosion4}, 70, 63, x, y);
+		super(new int[]{R.drawable.explosion1, R.drawable.explosion2, R.drawable.explosion3, R.drawable.explosion4}, Config.EXPLOSION_WIDTH, Config.EXPLOSION_HEIGHT, x, y);
 		
 		// Datenfelder initialisieren
 		destructiveSkill = new DestructiveSkill(2);

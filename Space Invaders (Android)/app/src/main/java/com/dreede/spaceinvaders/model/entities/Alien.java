@@ -1,5 +1,6 @@
 package com.dreede.spaceinvaders.model.entities;
 
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkill;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
@@ -130,13 +131,13 @@ public class Alien extends TexturedOpenGlObject implements MoveableSkillInterfac
 		public Builder(int alienID, float x, float y) {
 			switch (alienID) {
 			case ALIEN_1:
-				alien = new Alien(ALIEN_1, new int[]{R.drawable.alien1}, 70, 63, x, y, 50f, 20f, 5, 10);
+				alien = new Alien(ALIEN_1, new int[]{R.drawable.alien1}, Config.ALIEN_WIDTH, Config.ALIEN_HEIGHT, x, y, 50f, 20f, 5, 10);
 				break;
 			case ALIEN_2:
-				alien = new Alien(ALIEN_2, new int[]{R.drawable.alien2}, 70, 63, x, y, 50f, 20f, 5, 20);
+				alien = new Alien(ALIEN_2, new int[]{R.drawable.alien2}, Config.ALIEN_WIDTH, Config.ALIEN_HEIGHT, x, y, 50f, 20f, 5, 20);
 				break;
 			case ALIEN_3:
-				alien = new Alien(ALIEN_3, new int[]{R.drawable.alien3}, 70, 63, x, y, 50f, 20f, 5, 30);
+				alien = new Alien(ALIEN_3, new int[]{R.drawable.alien3}, Config.ALIEN_WIDTH, Config.ALIEN_HEIGHT, x, y, 50f, 20f, 5, 30);
 				break;
 			}
 		}

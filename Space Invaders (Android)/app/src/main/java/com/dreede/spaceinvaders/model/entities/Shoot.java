@@ -1,5 +1,6 @@
 package com.dreede.spaceinvaders.model.entities;
 
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkill;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
@@ -125,7 +126,7 @@ public class Shoot extends TexturedOpenGlObject implements MoveableSkillInterfac
 				shoot = new Shoot(new int[]{R.drawable.shoot_player}, 7, 20, centerX - 7 / 2, centerY - 20 / 2, 50f, 3, 5, true);
 				break;
 			case ALIEN_SHOOT:
-				shoot = new Shoot(new int[]{R.drawable.shoot_alien2}, 7, 20, centerX - 7 / 2, centerY - 20 / 2, -50f, 3, 5, false);
+				shoot = new Shoot(new int[]{R.drawable.shoot_alien2}, Config.SHOOT_WIDTH, Config.SHOOT_HEIGHT, centerX - 7 / 2, centerY - 20 / 2, -50f, 3, 5, false);
 				break;
 			}
 		}

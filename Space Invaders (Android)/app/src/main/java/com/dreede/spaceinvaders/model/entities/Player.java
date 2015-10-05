@@ -1,5 +1,6 @@
 package com.dreede.spaceinvaders.model.entities;
 
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkill;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
@@ -38,7 +39,7 @@ public class Player extends TexturedOpenGlObject implements MoveableSkillInterfa
 	 * @param y Y-Koordinate der unteren-linken-Ecke des Objektes
 	 */
 	public Player(float x, float y) {
-		super(new int[]{R.drawable.player}, 70, 49, x, y);
+		super(new int[]{R.drawable.player}, Config.PLAYER_WIDTH, Config.PLAYER_HEIGHT, x, y);
 		
 		// Datenfelder initialisieren
 		movableSkill = new MoveableSkill(100f, 0f);

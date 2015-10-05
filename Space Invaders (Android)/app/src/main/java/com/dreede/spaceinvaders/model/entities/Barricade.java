@@ -1,5 +1,6 @@
 package com.dreede.spaceinvaders.model.entities;
 
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkill;
 import com.dreede.spaceinvaders.model.entities.skills.DestroyableSkillInterface;
@@ -27,7 +28,7 @@ public class Barricade extends TexturedOpenGlObject implements DestroyableSkillI
 	 * @param y Y-Koordinate der unteren-linken-Ecke des Objektes
 	 */
 	public Barricade(float x, float y) {
-		super(new int[]{R.drawable.barricade, R.drawable.barricade_broken1, R.drawable.barricade_broken2}, 200, 46, x, y);
+		super(new int[]{R.drawable.barricade, R.drawable.barricade_broken1, R.drawable.barricade_broken2}, Config.BARRICADE_WIDTH, Config.BARRICADE_HEIGHT, x, y);
 		
 		// Datenfelder initialisieren
 		destroyableSkill = new DestroyableSkill(20);

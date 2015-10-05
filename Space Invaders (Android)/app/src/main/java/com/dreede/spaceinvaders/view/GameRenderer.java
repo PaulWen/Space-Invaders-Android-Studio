@@ -4,6 +4,7 @@ import android.content.Context;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView.Renderer;
 import android.opengl.Matrix;
+import android.util.Log;
 
 import com.dreede.spaceinvaders.controller.animation.AnimationInterface;
 import com.dreede.spaceinvaders.model.ViewModelInterface;
@@ -123,10 +124,13 @@ public class GameRenderer implements Renderer {
 	
 	@Override
 	public void onSurfaceChanged(GL10 gl, int screenWidth, int screenHeight) {
+		Log.d(getClass().getName(), "width:" + screenWidth);
+		Log.d(getClass().getName(), "height:" + screenHeight);
+
 		// Viewport neu setzen, damit es immernoch Fullscreen ist
 		GLES20.glViewport(0, 0, screenWidth, screenHeight);
-		
-	   // die orthographische Matrix hohlen um direkt auf den Screen zeichnen zu können
+
+	    // die orthographische Matrix hohlen um direkt auf den Screen zeichnen zu können
 		Matrix.orthoM(projectionMatrix, 0, 0f, screenWidth, 0.0f, screenHeight, 0f, 50f);
 
 		// die Kamera so Positionieren, dass WorldCoordinates = ScreenCoordiantes

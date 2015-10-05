@@ -1,5 +1,6 @@
 package com.dreede.spaceinvaders.model;
 
+import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.R;
 import com.dreede.spaceinvaders.model.dataObjects.GameModelDataToSaveDataObject;
 import com.dreede.spaceinvaders.model.entities.Alien;
@@ -56,7 +57,7 @@ public class GameModel implements ViewModelInterface, PlayerAnimationModelInterf
 	public GameModel(ImageViewButton moveLeftButton, ImageViewButton moveRightButton, ImageViewButton shootButton) {
 		// Datenfelder initialisieren
 		currentWave = 0;
-		background = new TexturedOpenGlObject(new int[]{R.drawable.background}, 1280, 720, 0, 0);
+		background = new TexturedOpenGlObject(new int[]{R.drawable.background}, Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT, 0, 0);
 		player = null;
 		alienList = new ArrayList<Alien>();
 		barricadenList = new ArrayList<Barricade>();
@@ -76,10 +77,10 @@ public class GameModel implements ViewModelInterface, PlayerAnimationModelInterf
 		barricadenList.add(new Barricade(750, 200));
 		barricadenList.add(new Barricade(1000, 200));
 		
-		boundaryList.add(new Rectangle(0, 0, 0, 720));
-		boundaryList.add(new Rectangle(0, 0, 1280, 0));
-		boundaryList.add(new Rectangle(1280, 0, 0, 720));
-		boundaryList.add(new Rectangle(0, 720, 1280, 0));
+		boundaryList.add(new Rectangle(0, 0, 0, Config.SCREEN_HEIGHT));
+		boundaryList.add(new Rectangle(0, 0, Config.SCREEN_WIDTH, 0));
+		boundaryList.add(new Rectangle(Config.SCREEN_WIDTH, 0, 0, Config.SCREEN_HEIGHT));
+		boundaryList.add(new Rectangle(0, Config.SCREEN_HEIGHT, Config.SCREEN_WIDTH, 0));
 	}
 	
 	/**
