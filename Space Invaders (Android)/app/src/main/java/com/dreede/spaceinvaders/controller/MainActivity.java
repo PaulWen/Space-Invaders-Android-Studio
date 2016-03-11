@@ -13,84 +13,73 @@ import com.dreede.spaceinvaders.util.SoundtrackManager;
 
 /**
  * Die Klasse {@link MainActivity} [...]
- * 
- * 
- * @author Paul Wenzel
  *
+ * @author Paul Wenzel
  */
 public class MainActivity extends Activity {
-	
+
 /////////////////////////////////////////////////Datenfelder/////////////////////////////////////////////////
-	
-	public static SoundtrackManager soundtrackManager;
-	public static SoundEffectManager soundEffectManager;
-	public static OptionsSharedPreferences optionsSharedPreferences;
-	
+
+    public static SoundtrackManager soundtrackManager;
+    public static SoundEffectManager soundEffectManager;
+    public static OptionsSharedPreferences optionsSharedPreferences;
 
 //////////////////////////////////////////////Getter und Setter//////////////////////////////////////////////
-	
-	
-	
-	
-	
+
+
 ///////////////////////////////////////////////geerbte Methoden//////////////////////////////////////////////
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.load);
-		
-		
-		new Handler().post(new Runnable() {
-			@Override
-			public void run() {
-				// Datenfelder initialisieren
-				optionsSharedPreferences = new OptionsSharedPreferences(getApplicationContext());
-				soundtrackManager = new SoundtrackManager();
-				soundEffectManager = new SoundEffectManager(getApplicationContext());
-				
-				// StartActivity starten
-				Intent intent = new Intent(MainActivity.this, StartMenuActivity.class);
-				MainActivity.this.startActivity(intent);
-				MainActivity.this.finish();
-			}
-		});
-	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-	}
 
-	@Override
-	protected void onPause() {
-		super.onPause();
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.load);
 
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-	}
 
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_MENU) {
-		} else if (keyCode == KeyEvent.KEYCODE_BACK) {
-			finish();
-		}
-		
-		return true;
-	}
-	
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                // Datenfelder initialisieren
+                optionsSharedPreferences = new OptionsSharedPreferences(getApplicationContext());
+                soundtrackManager = new SoundtrackManager();
+                soundEffectManager = new SoundEffectManager(getApplicationContext());
+
+                // StartActivity starten
+                Intent intent = new Intent(MainActivity.this, StartMenuActivity.class);
+                MainActivity.this.startActivity(intent);
+                MainActivity.this.finish();
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+        } else if (keyCode == KeyEvent.KEYCODE_BACK) {
+            finish();
+        }
+
+        return true;
+    }
+
 //////////////////////////////////////////////////Methoden///////////////////////////////////////////////////
-	
-	
-	
-	
-	
+
+
 ///////////////////////////////////////////////Innere Klassen////////////////////////////////////////////////	
-	
-	
-	
-	
+
+
 }

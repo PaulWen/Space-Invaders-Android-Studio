@@ -54,7 +54,7 @@ public class TextureHelper {
 	 * @param width die gewünschte Breite, die die Textur haben soll
 	 * @param height die gewünschte Höhe, die die Textur haben soll
 	 * 
-	 * @returndie OpenGL-ID der gewünschten Texture oder 0 falls ein Fehler aufgetreten ist
+	 * @return die OpenGL-ID der gewünschten Texture oder 0 falls ein Fehler aufgetreten ist
 	 */
 	public static int loadTexture(Context context, int spriteResourceID, int width, int height) {
 		final int[] textureObjectIds = new int[1];
@@ -94,8 +94,7 @@ public class TextureHelper {
 		
 		// die Textur von OpenGl lösen, indem dem der Wert "0" übergeben wird
 		GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, 0);
-		
-		return textureObjectIds[0];        
+		return textureObjectIds[0];
 	}
 	
 ///////////////////////////////////////////////Innere Klassen////////////////////////////////////////////////	

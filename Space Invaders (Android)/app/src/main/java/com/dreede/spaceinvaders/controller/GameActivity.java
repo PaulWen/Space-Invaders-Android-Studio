@@ -145,7 +145,6 @@ public class GameActivity extends Activity implements AnimationInterface, OnClic
         explosionAnimation = new ExplosionAnimation(model);
         buttonAnimation = new ButtonAnimation(model, gameLayout);
 
-
         ////////////GameSurfaceView konfigurieren////////////
         // angeben, dass die Applikation für OpenGL 2.0 erstellt wird
         gameSurfaceView.setEGLContextClientVersion(2);
@@ -178,6 +177,7 @@ public class GameActivity extends Activity implements AnimationInterface, OnClic
         super.onResume();
         gameRenderer.onResume();
 
+        SoundtrackManager.startMediaPlayer(this, R.raw.soundtrack1);
         continueMusic = false;
     }
 

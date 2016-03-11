@@ -1,8 +1,5 @@
 package com.dreede.spaceinvaders.util;
 
-import java.io.IOException;
-import java.util.HashMap;
-
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -10,6 +7,9 @@ import android.util.Log;
 
 import com.dreede.spaceinvaders.Config;
 import com.dreede.spaceinvaders.controller.MainActivity;
+
+import java.io.IOException;
+import java.util.HashMap;
 
 
 /**
@@ -29,7 +29,7 @@ public class SoundEffectManager {
 /////////////////////////////////////////////Konstruktor///////////////////////////////////////////////////////
 
 	/**
-	 * Konstruktor SoundPoolManager
+	 * Konstruktor SoundPoolManager lädt alle
 	 * 
 	 * @param context => zum laden der Soundeffekte
 	 */
@@ -57,7 +57,7 @@ public class SoundEffectManager {
 	/**
 	 * Methode, welche einen Sound abspielt
 	 * 
-	 * @param key => der Name des Soundes, wie er ind der SoundList zufinden ist
+	 * @param fileName => der Name des Soundes, wie er ind der SoundList zufinden ist
 	 */
 	public static void playSoundEffect(String fileName) {
 		if (MainActivity.optionsSharedPreferences.isSoundEffectsOn()) { //nur wenn Soundeffecte in den Optionen an sind

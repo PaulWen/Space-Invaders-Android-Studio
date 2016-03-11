@@ -59,8 +59,8 @@ public class TextureShaderProgram extends ShaderProgram {
 		GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
 		// binde die gewünschte Textur zur aktiven Textur
 		GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureId);
-		// dem "texture uniform sampler" sagen, dass er die Textur "GLES20.GL_TEXTURE0" verwenden soll 
-		GLES20.glUniform1i(uTextureUnitLocation, GLES20.GL_TEXTURE0);
+		// dem "texture uniform sampler" sagen, dass er die Textur "GLES20.GL_TEXTURE0" (ist gleich 0!!) verwenden soll
+		GLES20.glUniform1i(uTextureUnitLocation, 0);
 	}
 	
 	/**
